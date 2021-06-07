@@ -47,7 +47,7 @@ CREATE TABLE jongereactiviteit (
 
 CREATE TABLE medewerker (
     medewerkerID INT AUTO_INCREMENT NOT NULL,
-    username VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     PRIMARY KEY(medewerkerID)
 );
